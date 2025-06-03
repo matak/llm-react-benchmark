@@ -36,5 +36,5 @@ Shrnutí
 
 Celý projekt je připraven k dalšímu použití nebo rozšíření pro jiné domény i hlubší analýzu.
 
-Adresa projektu: 
+Adresa projektu: https://github.com/matak/llm-react-benchmark
 

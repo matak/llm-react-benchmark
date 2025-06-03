@@ -38,31 +38,33 @@ Celý projekt je připraven k dalšímu použití nebo rozšíření pro jiné d
 
 Adresa projektu: https://github.com/matak/llm-react-benchmark
 
+## Finální výstup
 
-Finální výstup:
+### Průměrné skóre podle modelu
 
-Average score by model:
-model
-google/gemini-pro-1.5              4.70
-mistralai/mixtral-8x7b-instruct    4.00
-meta-llama/llama-3-70b-instruct    3.75
-openai/gpt-3.5-turbo               3.75
-openai/gpt-4                       3.45
-Name: score, dtype: float64
+| Model                              | Skóre |
+| ---------------------------------- | ----- |
+| google/gemini-pro-1.5              | **4.70** |
+| mistralai/mixtral-8x7b-instruct    | 4.00 |
+| meta-llama/llama-3-70b-instruct    | 3.75 |
+| openai/gpt-3.5-turbo               | 3.75 |
+| openai/gpt-4                       | 3.45 |
 
-Average score by prompt style:
-style
-zero-shot           4.36
-one-shot            4.08
-chain-of-thought    3.96
-few-shot            3.32
-Name: score, dtype: float64
+### Průměrné skóre podle stylu promptu
 
-Average score by model and style:
-style                            chain-of-thought  few-shot  one-shot  zero-shot
-model
-google/gemini-pro-1.5                         4.6       4.8       4.6        4.8
-meta-llama/llama-3-70b-instruct               4.0       2.4       4.0        4.6
-mistralai/mixtral-8x7b-instruct               3.6       4.0       4.0        4.4
-openai/gpt-3.5-turbo                          3.4       3.6       4.2        3.8
-openai/gpt-4                                  4.2       1.8       3.6        4.2
+| Styl            | Skóre |
+| --------------- | ----- |
+| zero-shot       | **4.36** |
+| one-shot        | 4.08 |
+| chain-of-thought| 3.96 |
+| few-shot        | 3.32 |
+
+### Průměrné skóre podle modelu a stylu
+
+| Model                              | chain-of-thought | few-shot | one-shot | zero-shot |
+| ---------------------------------- | ---------------- | -------- | -------- | --------- |
+| google/gemini-pro-1.5              | 4.6 | 4.8 | 4.6 | 4.8 |
+| meta-llama/llama-3-70b-instruct    | 4.0 | 2.4 | 4.0 | 4.6 |
+| mistralai/mixtral-8x7b-instruct    | 3.6 | 4.0 | 4.0 | 4.4 |
+| openai/gpt-3.5-turbo               | 3.4 | 3.6 | 4.2 | 3.8 |
+| openai/gpt-4                       | 4.2 | 1.8 | 3.6 | 4.2 |

@@ -14,7 +14,7 @@ Postup řešení
 
 - Všechny odpovědi jsem nechal automaticky ohodnotit modelem Claude Opus 4, který vrací skóre v rozsahu 1–5.
 
-- Výsledným souborem je pak scored_results.json.
+- Výsledným souborem je pak [scored_results.json](scored_results.json).
 
 Automatizace
 ------------

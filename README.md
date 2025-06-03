@@ -2,6 +2,8 @@
 
 This project benchmarks multiple large language models (LLMs) on React programming tasks using various prompt engineering techniques. It evaluates the response quality of each model and automates scoring with Claude Opus 4 via OpenRouter.
 
+Pls. see the solution of assignment in [assignment-01-solution.md](assignment-01-solution.md).
+
 ## ✅ Goals
 - Identify the cheapest sufficient model for different programming tasks
 - Evaluate how prompt engineering affects performance

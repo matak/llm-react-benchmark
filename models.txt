@@ -1,0 +1,5 @@
+openai/gpt-3.5-turbo
+openai/gpt-4
+mistralai/mixtral-8x7b-instruct
+google/gemini-pro-1.5
+meta-llama/llama-3-70b-instruct

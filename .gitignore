@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+
+.env
+results.csv
+scored_results.csv
+*.log
+venv/
+.uv/
+uv.lock

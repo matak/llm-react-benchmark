@@ -1,0 +1,57 @@
+[
+  {
+    "id": "Q1",
+    "category": "B",
+    "description": "Why does `useEffect` keep calling the API over and over, and how to fix it?",
+    "prompts": [
+      {"style": "zero-shot", "input": "Why does useEffect keep calling the API over and over, and how can I fix it?"},
+      {"style": "one-shot", "input": "Example: If useEffect has a dependency array like `[data]`, then whenever `data` changes, the effect is re-executed.\n\nWhy does useEffect keep calling the API over and over, and how can I fix it?"},
+      {"style": "few-shot", "input": "Example 1:\nQ: Why does useEffect call a function in a loop?\nA: Because a changing state or prop is in the dependency array.\n\nExample 2:\nQ: I fetch data in useEffect and the API keeps firing.\nA: You might be setting state inside the effect, which retriggers it.\n\nNow: Why does useEffect keep calling the API over and over?"},
+      {"style": "chain-of-thought", "input": "Why does useEffect keep calling the API? Think step by step and suggest a fix."}
+    ]
+  },
+  {
+    "id": "Q2",
+    "category": "A",
+    "description": "How to correctly update state based on a previous value?",
+    "prompts": [
+      {"style": "zero-shot", "input": "How do I correctly update a state variable based on its previous value in React?"},
+      {"style": "one-shot", "input": "Example:\n```jsx\nsetCount(prev => prev + 1)\n```\n\nHow do I correctly update a state variable based on its previous value?"},
+      {"style": "few-shot", "input": "Example 1:\nQ: I want to increment count without stale state issues.\nA: Use functional updates like `setCount(prev => prev + 1)`.\n\nExample 2:\nQ: My counter skips values when clicked rapidly.\nA: Avoid relying on outdated closure; use prev-state syntax.\n\nNow: How do I correctly update state based on a previous value?"},
+      {"style": "chain-of-thought", "input": "How should I update a state variable that depends on its previous value? Think step-by-step."}
+    ]
+  },
+  {
+    "id": "Q3",
+    "category": "B",
+    "description": "Why doesn’t `setState` immediately update state?",
+    "prompts": [
+      {"style": "zero-shot", "input": "Why doesn’t setState immediately update the state after it's called?"},
+      {"style": "one-shot", "input": "Example: In React, `setCount(5)` doesn't change the value right away.\n\nWhy doesn't setState update state immediately after it's called?"},
+      {"style": "few-shot", "input": "Example 1:\nQ: I use setCount(5), but the value doesn't change immediately.\nA: The setState function is asynchronous and the change takes effect on the next render.\n\nExample 2:\nQ: After calling setValue(), I still see the old value used in the next line.\nA: This might be a stale closure problem in a callback or effect.\n\nNow: Why doesn’t setState immediately update the state after it's called?"},
+      {"style": "chain-of-thought", "input": "Why doesn’t setState immediately update state? Think through the React rendering lifecycle."}
+    ]
+  },
+  {
+    "id": "Q4",
+    "category": "B",
+    "description": "How to fix `Cannot read properties of undefined (reading 'map')` in React?",
+    "prompts": [
+      {"style": "zero-shot", "input": "I get `Cannot read properties of undefined (reading 'map')` in my React component. What's causing this and how can I fix it?"},
+      {"style": "one-shot", "input": "Example: This error often happens if you try to call `.map()` on a value that hasn't been loaded yet.\n\nI get `Cannot read properties of undefined (reading 'map')` in my React component. How can I fix it?"},
+      {"style": "few-shot", "input": "Example 1:\nQ: My component crashes on `.map()` when rendering.\nA: Check if the array exists before calling `.map()` (e.g. `items?.map`).\n\nExample 2:\nQ: I'm fetching data asynchronously and get this error.\nA: You might be trying to render before data is available.\n\nNow: I get `Cannot read properties of undefined (reading 'map')`. What can I do?"},
+      {"style": "chain-of-thought", "input": "Why would I get a `Cannot read properties of undefined (reading 'map')` error in React? Explain step-by-step and suggest a fix."}
+    ]
+  },
+  {
+    "id": "Q5",
+    "category": "B",
+    "description": "How to resolve `A component is changing an uncontrolled input...` warning?",
+    "prompts": [
+      {"style": "zero-shot", "input": "How can I fix the warning: `A component is changing an uncontrolled input to be controlled` in React?"},
+      {"style": "one-shot", "input": "Example: This warning usually means the input starts without a `value` prop but gets one later.\n\nHow can I fix the warning: `A component is changing an uncontrolled input to be controlled`?"},
+      {"style": "few-shot", "input": "Example 1:\nQ: I get a warning when setting input value based on props.\nA: Initialize your state properly and use controlled components.\n\nExample 2:\nQ: React throws uncontrolled-to-controlled warning.\nA: Make sure `value` is always defined, or use `defaultValue` for uncontrolled behavior.\n\nNow: How to resolve the warning about uncontrolled input?"},
+      {"style": "chain-of-thought", "input": "What causes the warning about uncontrolled input in React, and how can I fix it? Think step-by-step."}
+    ]
+  }
+]
